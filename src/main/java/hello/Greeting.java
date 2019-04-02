@@ -9,7 +9,7 @@ public class Greeting {
         this.id = id;
         this.content = content;
         jsondata = new StringBuilder()
-           .append("
+           .append(`
 	
 		"id" : 1,
 		"brand" : "samsung",
@@ -40,8 +40,8 @@ public class Greeting {
 		"model" : "galaxy s10e (sm-g970f)",
 		"name" : "samsung galaxy s10e (sm-g970f)",
 		"price" : 4454.8,
-		"source" : "https://www.epey.com/akilli-telefonlar/samsung-galaxy-s10e.html#fiyatlar")
-           .append("
+		"source" : "https://www.epey.com/akilli-telefonlar/samsung-galaxy-s10e.html#fiyatlar"`)
+           .append(`"
 		"id" : 6,
 		"brand" : "samsung",
 		"model" : "galaxy note 9 tek hat / 512 gb (sm-n960f)",
@@ -77,7 +77,7 @@ public class Greeting {
 		"model" : "galaxy s9+ (plus) (sm-g965f)",
 		"name" : "samsung galaxy s9+ (plus) (sm-g965f)",
 		"price" : 4183.9,
-		"source" : "https://www.epey.com/akilli-telefonlar/samsung-galaxy-s9-plus.html#fiyatlar")
+		"source" : "https://www.epey.com/akilli-telefonlar/samsung-galaxy-s9-plus.html#fiyatlar"`)
 	  .append("we had everything before us, we had nothing before us")
            .toString();
     }
