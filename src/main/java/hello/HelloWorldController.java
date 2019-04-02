@@ -26,7 +26,7 @@ public class HelloWorldController {
     public Greeting getdata() {
         Greeting ng =new Greeting();
         
-        return ng.getdata();
+        return ng.getData();
     }
 
 
