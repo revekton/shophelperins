@@ -12,7 +12,10 @@ public class HelloWorldController {
 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
-
+    @GetMapping("/")
+    public String sendData(){
+    return "jsonData";
+    }
     @GetMapping("/hello-world")
     @ResponseBody
     public Greeting sayHello(@RequestParam(name="name", required=false, defaultValue="Stranger") String name) {
