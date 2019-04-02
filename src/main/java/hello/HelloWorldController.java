@@ -21,5 +21,13 @@ public class HelloWorldController {
     public Greeting sayHello(@RequestParam(name="name", required=false, defaultValue="Stranger") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
+    @GetMapping("/getdata")
+    @ResponseBody
+    public Greeting getdata() {
+        Greeting ng =new Greeting();
+        
+        return ng.getdata();
+    }
+
 
 }
