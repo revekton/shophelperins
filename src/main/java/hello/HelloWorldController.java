@@ -25,8 +25,9 @@ public class HelloWorldController {
     @ResponseBody
     public String getdata()  throws IOException {
         Greeting ng =new Greeting(counter.incrementAndGet(),"default");
-        
-        return "<div id='jss'></div>" + "<Script>document.getElementById("jss").innerHTML=JSON.stringfy("+ng.getData()+")</Script>";
+        String div="<div id='jss'></div>";
+        String scr="<Script>document.getElementById("jss").innerHTML=";
+        return div + scr + "JSON.stringfy"+"("+ng.getData()+")<"/"+"Script">";
     }
 
 
