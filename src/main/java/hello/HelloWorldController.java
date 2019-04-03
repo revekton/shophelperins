@@ -27,7 +27,7 @@ public class HelloWorldController {
         Greeting ng =new Greeting(counter.incrementAndGet(),"default");
         String div="<div id='jss'></div>";
         String scr="<Script>document.getElementById("jss").innerHTML=";
-        return div + scr + "JSON.stringfy"+"("+ng.getData();+")<"/"+"Script">";
+        return div + scr + "JSON.stringfy"+"("+ng.getData();+")</Script>";
     }
 
 
