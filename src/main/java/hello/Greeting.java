@@ -10,7 +10,7 @@ public class Greeting {
         this.content = content;
     }
 public Greeting(){
-this.jsondata="is it really hard to get some data done ffs;
+this.jsondata="is it really hard to get some data done ffs";
 }
 
     public long getId() {
