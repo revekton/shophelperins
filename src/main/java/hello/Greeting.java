@@ -1,5 +1,8 @@
 package hello;
-
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 public class Greeting {
 
     private final long id;
@@ -16,7 +19,7 @@ public class Greeting {
     public String getContent() {
         return content;
     }
-    public String getData(){
+    public String getData() throws IOException{
         String content = new String(Files.readAllBytes(Paths.get("json.txt")));
         //
         //String jsondata= ;
