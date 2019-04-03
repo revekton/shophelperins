@@ -23,7 +23,7 @@ public class HelloWorldController {
     }
     @GetMapping("/getdata")
     @ResponseBody
-    public Greeting getdata() {
+    public String getdata() {
         Greeting ng =new Greeting();
         
         return ng.getData();
