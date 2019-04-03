@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class HelloWorldController throws IOException {
+public class HelloWorldController {
 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
@@ -23,7 +23,7 @@ public class HelloWorldController throws IOException {
     }
     @GetMapping("/getdata")
     @ResponseBody
-    public String getdata() {
+    public String getdata()  throws IOException {
         Greeting ng =new Greeting(counter.incrementAndGet(),"default");
         
         return ng.getData();
