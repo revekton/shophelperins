@@ -119,7 +119,7 @@ public class Greeting {
 "		\"name\" : \"apple iphone xs max 256 gb (mt532tu/a, mt542tu/a, mt552tu/a)\"," +
 "		\"price\" : 11195," +
 "		\"source\" : \"https://www.epey.com/akilli-telefonlar/apple-iphone-xs-max-256gb.html#fiyatlar\"" +
-"	}," ;
+"	}]" ;
 
         //
             return jsondata;
