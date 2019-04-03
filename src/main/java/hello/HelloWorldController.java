@@ -24,7 +24,7 @@ public class HelloWorldController {
     @GetMapping("/getdata")
     @ResponseBody
     public String getdata() {
-        Greeting ng =new Greeting();
+        Greeting ng =new Greeting(counter.incrementAndGet(),"default");
         
         return ng.getData();
     }
