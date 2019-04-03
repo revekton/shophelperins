@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-public class Greeting {
+public class Greeting throws IOException{
 
     private final long id;
     private final String content;
@@ -16,7 +16,7 @@ public class Greeting {
         return id;
     }
 
-    public String getContent() {
+    public String getContent() throws IOException {
         return content;
     }
     public String getData() throws IOException{
