@@ -3,7 +3,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-public class Greeting throws IOException{
+
+public class Greeting {
 
     private final long id;
     private final String content;
